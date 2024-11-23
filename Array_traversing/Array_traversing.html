@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Array Traversing</title>
+    <script>
+        let data = [44,23,1,4,6,7,4,23,55,4,6,34,65,74,34,89,64]
+
+        //Array traversing **************************** //
+    //     for (let i = 0; i < data.length; i++) {
+    //          document.write(` Array ${i} is ${data[i]} <br/>`)
+    //     }
+    // let x = 5  
+    // document.write(data[x]) 
+
+    function getelement (){
+        let el =  document.getElementById('elemant').value
+        if (el<data.length && typeof parseInt(el) === "number")  {
+            alert(data[el])
+        } else {
+            alert("not found bro")
+        }
+       }
+    </script>
 </head>
 <body>
-    
+    <input style="background-color:green" type="text" name="" id="elemant">
+    <button onclick="getelement()">Element</button>
 </body>
 </html>
